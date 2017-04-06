@@ -11,17 +11,18 @@ import { AppComponent } from './app.component';
 import { HeroModule } from "app/hero/hero.module";
 import { HomeModule } from "app/home/home.module";
 import { AuthModule } from "app/auth/auth.module";
+import { PageNotFoundComponent } from "app/not-found.component";
 import 'hammerjs';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    BrowserAnimationsModule,
-    MaterialModule.forRoot(),
+    CoreModule,
     HttpModule,
     AppRoutingModule,
     HomeModule,
