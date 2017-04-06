@@ -1,6 +1,8 @@
-<h1>
-  {{title}}
-</h1>
-<a routerLink='/'>Home</a>
-<a routerLink='/heroes'>Heroes</a>
+<md-toolbar>
+  <img class='logo' src='../assets/cykel-logo.png'/>
+	<a md-button routerLink='/home' routerLinkActive='active-link'>
+    <md-icon>home</md-icon>
+  </a>
+	<a md-button routerLink='/heroes' routerLinkActive='active-link'>Heroes</a>
+</md-toolbar>
 <router-outlet></router-outlet>
