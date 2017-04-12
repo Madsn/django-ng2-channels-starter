@@ -1,33 +1,48 @@
-<md-tab-group class="signin-tabgroup">
-  <md-tab label="Existing user">
-    <form class="signin-form">
-      <md-input-container class="input-fullwidth">
-        <input mdInput placeholder="username" value="">
-      </md-input-container>
-      <md-input-container class="input-fullwidth">
-        <input mdInput type="password" placeholder="password" value="">
-      </md-input-container>
-      <button md-raised-button color="accent">Sign in</button>
-    </form>
-  </md-tab>
-  <md-tab label="New user">
-    <form class="signin-form">
-      <md-input-container class="input-fullwidth">
-        <input mdInput placeholder="username" value="">
-      </md-input-container>
-      <md-input-container class="input-fullwidth">
-        <input mdInput type="password" placeholder="password" value="">
-      </md-input-container>
-      <md-input-container class="input-fullwidth">
-        <input mdInput type="password" placeholder="confirm password" value="">
-      </md-input-container>
-      <md-input-container class="input-fullwidth">
-        <input mdInput placeholder="Full name" value="">
-      </md-input-container>
-      <md-input-container class="input-fullwidth">
-        <input mdInput placeholder="email" value="">
-      </md-input-container>
-      <button md-raised-button color="accent">Create account</button>
-    </form>
-  </md-tab>
-</md-tab-group>
+<md-card class="signin-card">
+  <md-card-title>Login</md-card-title>
+  <md-tab-group md-stretch-tabs="always">
+    <md-tab label="Sign in">
+      <form class="signin-form">
+        <md-input-container class="input-fullwidth">
+          <span md-prefix>
+            <i class="material-icons app-input-icon">person</i>
+            &nbsp;
+          </span>
+          <input mdInput placeholder="Username" value="">
+        </md-input-container>
+        <md-input-container class="input-fullwidth">
+          <span md-prefix>
+            <i class="material-icons app-input-icon">lock_open</i>
+            &nbsp;
+          </span>
+          <input mdInput type="password" placeholder="Password" value="">
+        </md-input-container>
+        <div align="end" class="input-fullwidth">
+          <button md-raised-button color="accent">Sign in</button>
+        </div>
+      </form>
+    </md-tab>
+    <md-tab label="Sign up">
+      <form class="signin-form">
+        <md-input-container class="input-fullwidth">
+          <input mdInput placeholder="Username" value="">
+        </md-input-container>
+        <md-input-container class="input-fullwidth">
+          <input mdInput type="password" placeholder="Password" value="">
+        </md-input-container>
+        <md-input-container class="input-fullwidth">
+          <input mdInput type="password" placeholder="Confirm password" value="">
+        </md-input-container>
+        <md-input-container class="input-fullwidth">
+          <input mdInput placeholder="Full name" value="">
+        </md-input-container>
+        <md-input-container class="input-fullwidth">
+          <input mdInput placeholder="email" value="">
+        </md-input-container>
+        <div align="end" class="input-fullwidth">
+          <button md-raised-button color="accent">Create account</button>
+        </div>
+      </form>
+    </md-tab>
+  </md-tab-group>
+</md-card>

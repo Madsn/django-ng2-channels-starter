@@ -1,14 +1,10 @@
 .signin-form {
-  padding-top: 48px;
-  width: 500px;
-  margin: auto;
+  padding-top: 14px;
 }
 
-.signin-tabgroup {
-  padding-top: 48px;
-  width: 500px;
-  margin: auto;
-  align-items: center;
+.signin-card {
+  margin: 24px auto 0 auto;
+  width: 360px;
 }
 
 .input-fullwidth {
