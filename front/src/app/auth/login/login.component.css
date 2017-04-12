@@ -4,6 +4,13 @@
   margin: auto;
 }
 
+.signin-tabgroup {
+  padding-top: 48px;
+  width: 500px;
+  margin: auto;
+  align-items: center;
+}
+
 .input-fullwidth {
   width: 100%;
 }
