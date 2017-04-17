@@ -1,10 +1,13 @@
 <button (click)="newUser = false">Login</button>
 <button (click)="newUser = true">Sign up</button>
-<button (click)="print()">print</button>
 <router-outlet name='auth'></router-outlet>
-<div [hidden]="newUser">
-  <app-login></app-login>
-</div>
-<div [hidden]="!newUser">
-  <app-signup></app-signup>
-</div>
+<md-card class="auth-card">
+  <div [hidden]="newUser">
+    <md-card-title>Login</md-card-title>
+    <app-login></app-login>
+  </div>
+  <div [hidden]="!newUser">
+    <md-card-title>Sign up</md-card-title>
+    <app-signup></app-signup>
+  </div>
+</md-card>

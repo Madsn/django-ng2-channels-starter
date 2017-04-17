@@ -15,8 +15,4 @@ export class AuthComponent implements OnInit {
   ngOnInit() {
   }
 
-  print() {
-    console.log(this.newUser);
-  }
-
 }
