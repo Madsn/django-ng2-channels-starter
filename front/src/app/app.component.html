@@ -1,9 +1,31 @@
-<md-toolbar>
-  <img class='logo' src='../assets/cykel-logo.png'/>
-	<a md-button routerLink='/home' routerLinkActive='active-link'>
-    <md-icon>home</md-icon>
-  </a>
-	<a md-button routerLink='/heroes' routerLinkActive='active-link'>Heroes</a>
-	<a md-button routerLink='/auth' routerLinkActive='active-link'>Login</a>
-</md-toolbar>
-<router-outlet></router-outlet>
+<md-sidenav-container class="sidenav-container">
+  <md-sidenav #start opened mode="side">
+    <header class="nav-header">
+      <img class="logo" src="../assets/cykel-logo.png"/>
+    </header>
+    <div flex role="navigation">
+      <ul style="list-style: none;">
+        <li>
+          <a md-button routerLink="/home" routerLinkActive="active-link">
+            <md-icon>home</md-icon>
+          </a>
+        </li>
+        <li>
+          <a md-button routerLink="/heroes" routerLinkActive="active-link">Heroes</a>
+        </li>
+        <li>
+          <a md-button routerLink="/auth" routerLinkActive="active-link">Login</a>
+        </li>
+      </ul>
+    </div>
+  </md-sidenav>
+
+  <div class="sidenav-content">
+    <md-toolbar>
+      <button [hidden]="this.sideNavOpen" md-icon-button (click)="start.toggle()">
+        <md-icon>menu</md-icon>
+      </button>
+    </md-toolbar>
+    <router-outlet></router-outlet>
+  </div>
+</md-sidenav-container>

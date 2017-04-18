@@ -5,3 +5,41 @@ a.active-link {
   padding-right: 14px;
   padding-left: 14px;
 }
+
+.body {
+  height: 100vh;
+  margin: 0;
+}
+
+.sidenav-container {
+  height: 100%;
+  vertical-align: top;
+  margin: 0;
+}
+
+.sidenav-content {
+  height: 100vh;
+  vertical-align: top;
+  margin: 0;
+}
+
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-container {
+  width: 500px;
+  height: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.example-sidenav {
+  padding: 20px;
+}
+
+.sidenav {
+
+}
